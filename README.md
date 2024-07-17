@@ -29,16 +29,20 @@ npm install
 src/
   |-- demos/
   |   |-- demoLinkedList.ts
+  |   |-- demoStack.ts
   |
   |-- interfaces/
   |   |-- ILinkedList.ts
+  |   |-- IStack.ts
   |
   |-- models/
   |   |-- node.ts
   |   |-- linkedList.ts
+  |   |-- stack.ts
   |
   |-- tests/
   |   |-- linkedList.test.ts
+  |   |-- stack.test.ts
   |
   |-- app.ts
 ```
@@ -55,6 +59,16 @@ A linked list implementation with the following methods:
 - `search(index: number): any`
 - `remove(index: number): void`
 - `printData(): void`
+- `getSize(): number`
+
+### Stack
+
+A stack implementation with the following methods:
+
+- `push(data: any): void`
+- `pop(): any`
+- `peek(): any[]`
+- `isEmpty(): boolean`
 - `getSize(): number`
 
 ## Running the Application

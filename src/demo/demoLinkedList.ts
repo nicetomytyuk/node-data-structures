@@ -29,6 +29,4 @@ export function demoLinkedList() {
     ll.printData();
 
     console.log(`Size of the Linked List: ${ll.getSize()}`);
-
-    console.log("Demo complete.");
 }
