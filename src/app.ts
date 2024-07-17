@@ -1,6 +1,5 @@
-import { demoLinkedList } from "./demo/demoLinkedList";
 import * as readline from 'readline';
-import { demoStack } from "./demo/demoStack";
+import { demoLinkedList, demoQueue, demoStack } from './demo';
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -29,7 +28,8 @@ function menu() {
     console.log("\nSelect a demo to run:");
     console.log("1. Linked List Demo");
     console.log("2. Stack Demo");
-    console.log("3. Exit");
+    console.log("3. Queue Demo");
+    console.log("4. Exit");
 
     rl.question("Enter your choice: ", (choice) => {
         switch (choice) {
@@ -40,6 +40,9 @@ function menu() {
                 runDemo(demoStack);
                 break;
             case "3":
+                runDemo(demoQueue);
+                break;
+            case "4":
                 exit();
             default:
                 console.log("Invalid choice. Please try again.");

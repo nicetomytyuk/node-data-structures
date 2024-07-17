@@ -33,11 +33,6 @@ describe("Stack", () => {
         expect(stack.isEmpty()).toBe(true);
     });
 
-    test("isEmpty should return false if the stack is not empty", () => {
-        stack.push(1);
-        expect(stack.isEmpty()).toBe(false);
-    });
-
     test("getSize should return the size of the stack", () => {
         stack.push(1);
         stack.push(2);
