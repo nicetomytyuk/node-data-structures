@@ -30,19 +30,23 @@ src/
   |-- demos/
   |   |-- demoLinkedList.ts
   |   |-- demoStack.ts
+  |   |-- demoQueue.ts
   |
   |-- interfaces/
   |   |-- ILinkedList.ts
   |   |-- IStack.ts
+  |   |-- IQueue.ts
   |
   |-- models/
   |   |-- node.ts
   |   |-- linkedList.ts
   |   |-- stack.ts
+  |   |-- queue.ts
   |
   |-- tests/
   |   |-- linkedList.test.ts
   |   |-- stack.test.ts
+  |   |-- queue.test.ts
   |
   |-- app.ts
 ```
@@ -68,6 +72,16 @@ A stack implementation with the following methods:
 - `push(data: any): void`
 - `pop(): any`
 - `peek(): any[]`
+- `isEmpty(): boolean`
+- `getSize(): number`
+
+### Queue
+
+A queue implementation with the following methods:
+
+- `enqueue(data: any): void`
+- `dequeue(): any`
+- `front(): any`
 - `isEmpty(): boolean`
 - `getSize(): number`
 
